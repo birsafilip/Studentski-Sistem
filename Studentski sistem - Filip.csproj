@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6357280C-7324-4153-BBCB-CD7FDBDF5C5B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Studentski_sistem___Filip</RootNamespace>
+    <AssemblyName>Filip Birsa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izmeni_asistent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izmeni_asistent.Designer.cs">
+      <DependentUpon>Izmeni_asistent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izmeni_fakultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izmeni_fakultet.Designer.cs">
+      <DependentUpon>Izmeni_fakultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izmeni_predmet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izmeni_predmet.Designer.cs">
+      <DependentUpon>Izmeni_predmet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izmeni_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izmeni_profesor.Designer.cs">
+      <DependentUpon>Izmeni_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izmeni_univerzitet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izmeni_univerzitet.Designer.cs">
+      <DependentUpon>Izmeni_univerzitet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konekcija.cs" />
+    <Compile Include="Obrisi_asistenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obrisi_asistenta.Designer.cs">
+      <DependentUpon>Obrisi_asistenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obrisi_fakultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obrisi_fakultet.Designer.cs">
+      <DependentUpon>Obrisi_fakultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obrisi_predmet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obrisi_predmet.Designer.cs">
+      <DependentUpon>Obrisi_predmet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obrisi_profesora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obrisi_profesora.Designer.cs">
+      <DependentUpon>Obrisi_profesora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obrisi_univerzitet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obrisi_univerzitet.Designer.cs">
+      <DependentUpon>Obrisi_univerzitet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz_asistenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz_asistenta.Designer.cs">
+      <DependentUpon>Prikaz_asistenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz_fakulteta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz_fakulteta.Designer.cs">
+      <DependentUpon>Prikaz_fakulteta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz_predmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz_predmeta.Designer.cs">
+      <DependentUpon>Prikaz_predmeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz_profesora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz_profesora.Designer.cs">
+      <DependentUpon>Prikaz_profesora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz_profesorovog_asistenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz_profesorovog_asistenta.Designer.cs">
+      <DependentUpon>Prikaz_profesorovog_asistenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prikaz_univerziteta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prikaz_univerziteta.Designer.cs">
+      <DependentUpon>Prikaz_univerziteta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Studentski_sistemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Studentski_sistemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Unos_asistenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unos_asistenta.Designer.cs">
+      <DependentUpon>Unos_asistenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unos_fakultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unos_fakultet.Designer.cs">
+      <DependentUpon>Unos_fakultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unos_predmeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unos_predmeta.Designer.cs">
+      <DependentUpon>Unos_predmeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unos_profesora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unos_profesora.Designer.cs">
+      <DependentUpon>Unos_profesora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unos_univerziteta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unos_univerziteta.Designer.cs">
+      <DependentUpon>Unos_univerziteta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izmeni_asistent.resx">
+      <DependentUpon>Izmeni_asistent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izmeni_fakultet.resx">
+      <DependentUpon>Izmeni_fakultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izmeni_predmet.resx">
+      <DependentUpon>Izmeni_predmet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izmeni_profesor.resx">
+      <DependentUpon>Izmeni_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izmeni_univerzitet.resx">
+      <DependentUpon>Izmeni_univerzitet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrisi_asistenta.resx">
+      <DependentUpon>Obrisi_asistenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrisi_fakultet.resx">
+      <DependentUpon>Obrisi_fakultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrisi_predmet.resx">
+      <DependentUpon>Obrisi_predmet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrisi_profesora.resx">
+      <DependentUpon>Obrisi_profesora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obrisi_univerzitet.resx">
+      <DependentUpon>Obrisi_univerzitet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz_asistenta.resx">
+      <DependentUpon>Prikaz_asistenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz_fakulteta.resx">
+      <DependentUpon>Prikaz_fakulteta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz_predmeta.resx">
+      <DependentUpon>Prikaz_predmeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz_profesora.resx">
+      <DependentUpon>Prikaz_profesora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz_profesorovog_asistenta.resx">
+      <DependentUpon>Prikaz_profesorovog_asistenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prikaz_univerziteta.resx">
+      <DependentUpon>Prikaz_univerziteta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Unos_asistenta.resx">
+      <DependentUpon>Unos_asistenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unos_fakultet.resx">
+      <DependentUpon>Unos_fakultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unos_predmeta.resx">
+      <DependentUpon>Unos_predmeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unos_profesora.resx">
+      <DependentUpon>Unos_profesora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unos_univerziteta.resx">
+      <DependentUpon>Unos_univerziteta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Studentski_sistemDataSet.xsc">
+      <DependentUpon>Studentski_sistemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Studentski_sistemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Studentski_sistemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Studentski_sistemDataSet.xss">
+      <DependentUpon>Studentski_sistemDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
